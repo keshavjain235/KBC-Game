@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KBC : The Game</title>
+	<link rel="shortcut icon" href="images/titleLogo.png">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/mainPage.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
+	<script src="main1ajs.js" type="text/javascript"></script>
+	<script src="home1ajs.js" type="text/javascript"></script>
+	<script src="restartController.js" type="text/javascript"></script>
+</head>
+
+<body ng-app="myapp1" ng-controller="mainController">
+	<div id="wrapper">
+		<header>
+			<div id="top">
+				<input id="topEarnedMoney" type="text" value="Money: {{moneyEarned}}" readonly>
+				<div id="peoplePoll" ng-click="peoplePoll()">
+				<img id="crossPeoplePoll" src="images/cross.png" ng-style="crossStylePeoplePoll">
+				</div>
+				<div id="fiftyFifty">
+					<span ng-click="fiftyFifty()">50:50</span>
+					<img id="crossFiftyFifty" src="images/cross.png" ng-style="crossStyleFiftyFifty">
+				</div>
+			</div>
+			<div id="bottom">
+				
+			</div>
+		</header>
+		<div id="content">
+			<div class="leftContent">
+				<div id="welcome"><p>WELCOME</p></div><!--/welcome-->
+				 <div id="enteredName">{{urlParam('val')}}</div> 
+				 <div id="leftContentLogo">
+				 <img src="images/secondPageLeftLogo.png" alt="" title="">
+				 </div><!--/leftContentLogo-->
+			</div><!--/leftContent-->
+			<div class="middleContent">
+				<div id="middleSubContent" ng-style="correctWrong">
+					<div id="chart" ng-style="chartStyle">
+						<div id="bar1">
+						<p>A. {{peoplePoll1}} %</p>
+						</div>
+						<div id="bar2">
+						<p>B. {{peoplePoll2}} %</p>
+						</div>
+						<div id="bar3">
+						<p>C. {{peoplePoll3}} %</p>
+						</div>
+						<div id="bar4">
+						<p>D. {{peoplePoll4}} %</p>
+						</div>
+					</div>
+				</div>
+					<div id="symbol">
+					<img src="images/nextQuestionArrow.png" ng-style="showingNext" ng-click="nextQuestion()">
+					<img src="images/pointsEarned.png" ng-style="showingPoints" ng-click="viewEarnedPoints()">
+					</div>
+				
+			</div><!--/middleContent-->
+			<div class="rightContent" ng-style="currentMoney">
+				<div id="pointsTree"><p>LEVEL</p></div><!--/welcome-->
+				<div id="moneyList">
+				<p id="ten">₹ 25,00,000</p>
+				<p id="nine">₹ 12,50,000</p>
+				<p id="eight">₹ 6,40,000</p>
+				<p id="seven">₹ 3,20,000</p>
+				<p id="six">₹ 1,60,000</p>
+				<p id="five">₹ 80,000</p>
+				<p id="four">₹ 40,000</p>
+				<p id="three">₹ 20,000</p>
+				<p id="two">₹ 10,000</p>
+				<p id="one">₹ 5,000</p>
+				</div><!--/moneyList-->
+			</div><!--/rightContent-->
+		</div><!--/content-->
+		<footer>
+			<div class="question questionBack">
+			{{question}}
+			</div>
+			<div id="answers" class="options">
+			<div id="optionAB">
+			<input type="radio" id="radio1" name="radios">
+			<label for="radio1" ng-style="optStyle1" ng-click="optionSelected1()"><span class="optionColor">A. </span>{{optA}}</label>
+
+			<input type="radio" id="radio2" name="radios">
+		    <label for="radio2" ng-style="optStyle3" ng-click="optionSelected3()"><span class="optionColor">C. </span>{{optC}}</label>
+		   	</div>
+		   	<div id="optionCD">
+			<input type="radio" id="radio3" name="radios">
+		   	<label for="radio3" ng-style="optStyle2" ng-click="optionSelected2()"><span class="optionColor">B. </span>{{optB}}</label>
+
+			<input type="radio" id="radio4" name="radios">
+		   	<label for="radio4" ng-style="optStyle4" ng-click="optionSelected4()"><span class="optionColor">D. </span>{{optD}}</label>
+		   	</div>
+			</div>
+			<div id="lockUnlock">
+				<button id="unlock" ng-click="unlock()">UNLOCK</button>
+				<button id="lock" ng-click="lock()">LOCK</button>
+			</div>
+		</footer><!--/footer-->
+
+	</div>
+</body>
+</html>
+
+
+
+

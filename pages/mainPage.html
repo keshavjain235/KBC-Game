@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/mainPage.css">
+</head>
+<body>
+	<section id="wrapper">
+		<header>
+			<section id="top">
+				<input id="topEarnedMoney" type="text" value="Points: {{moneyEarned}}" readonly>
+				<section id="peoplePoll" ng-click="peoplePoll()">
+				<img id="crossPeoplePoll" src="images/cross.png" ng-style="crossStylePeoplePoll">
+				</section>
+				<section id="fiftyFifty">
+					<span ng-click="fiftyFifty()">50:50</span>
+					<img id="crossFiftyFifty" src="images/cross.png" ng-style="crossStyleFiftyFifty">
+				</section>
+			</section>
+			<section id="bottom">
+				
+			</section>
+		</header>
+		<section id="content">
+			<section class="leftContent">
+				<section id="welcome"><p>WELCOME</p></section><!--/welcome-->
+				 <section id="enteredName">{{showUser()}}</section> 
+				 <section id="leftContentLogo">
+				 <img src="images/secondPageLeftLogo.png" alt="" title="">
+				 </section><!--/leftContentLogo-->
+			</section><!--/leftContent-->
+			<section class="middleContent">
+				<section id="middleSubContent" ng-style="correctWrong">
+					<section id="chart" ng-style="chartStyle">
+						<section id="bar1">
+						<p>A. {{peoplePoll1}} %</p>
+						</section>
+						<section id="bar2">
+						<p>B. {{peoplePoll2}} %</p>
+						</section>
+						<section id="bar3">
+						<p>C. {{peoplePoll3}} %</p>
+						</section>
+						<section id="bar4">
+						<p>D. {{peoplePoll4}} %</p>
+						</section>
+					</section>
+				</section>
+					<section id="symbol">
+					<img src="images/nextQuestionArrow.png" ng-style="showingNext" ng-click="nextQuestion()">
+					<img src="images/pointsEarned.png" ng-style="showingPoints" ng-click="viewEarnedPoints()">
+					</section>
+				
+			</section><!--/middleContent-->
+			<section class="rightContent" ng-style="currentMoney">
+				<section id="pointsTree"><p>POINTS TREE</p></section><!--/welcome-->
+				<section id="moneyList">
+				<p id="ten">10. 10,00,000</p>
+				<p id="nine">9. 9,00,000</p>
+				<p id="eight">8. 8,00,000</p>
+				<p id="seven">7. 7,00,000</p>
+				<p id="six">6. 6,00,000</p>
+				<p id="five">5. 5,00,000</p>
+				<p id="four">4. 4,00,000</p>
+				<p id="three">3. 3,00,000</p>
+				<p id="two">2. 2,00,000</p>
+				<p id="one">1. 1,00,000</p>
+				</section><!--/moneyList-->
+			</section><!--/rightContent-->
+		</section><!--/content-->
+		<footer>
+			<section class="question questionBack">
+			{{question}}
+			</section>
+			<section id="answers" class="options">
+			<section id="optionAB">
+			<input type="radio" id="radio1" name="radios">
+			<label for="radio1" ng-style="optStyle1" ng-click="optionSelected1()"><span class="optionColor">A. </span>{{optA}}</label>
+
+			<input type="radio" id="radio2" name="radios">
+		    <label for="radio2" ng-style="optStyle3" ng-click="optionSelected3()"><span class="optionColor">C. </span>{{optC}}</label>
+		   	</section>
+		   	<section id="optionCD">
+			<input type="radio" id="radio3" name="radios">
+		   	<label for="radio3" ng-style="optStyle2" ng-click="optionSelected2()"><span class="optionColor">B. </span>{{optB}}</label>
+
+			<input type="radio" id="radio4" name="radios">
+		   	<label for="radio4" ng-style="optStyle4" ng-click="optionSelected4()"><span class="optionColor">D. </span>{{optD}}</label>
+		   	</section>
+			</section>
+			<section id="lockUnlock">
+				<button id="unlock" ng-click="unlock()">UNLOCK</button>
+				<button id="lock" ng-click="lock()">LOCK</button>
+			</section>
+		</footer><!--/footer-->
+
+	</section>
+</body>
+</html>
+
+
+
+

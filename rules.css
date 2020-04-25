@@ -1,0 +1,28 @@
+body {
+			background-color: #580B8F; 
+		}
+#logo {
+	height: 300px;
+	width: 300px;
+}
+h1{
+	text-transform: uppercase;
+	margin-bottom: 60px;
+	color: white;
+	font-size: 40px;
+}
+.ruleset {
+	color: white;
+	font-size: 22px;
+}
+.border{
+	display: block;
+	margin: auto;
+	width: 160px;
+	height: 3px;
+	background: #3498db;
+	margin-bottom: 40px;
+}
+ul {
+	margin-left: 50px;
+}

@@ -1,0 +1,384 @@
+body {
+	margin: 0 auto;
+background: url("../images/bg.png") no-repeat;
+background-size: 100%;
+}
+#wrapper {
+	margin: 0 auto;
+	background: url("../images/bg.png") no-repeat;
+	background-size: 100%;
+    height: 669px;
+    width: 1024px;
+}
+
+#logo {
+	width: 340px;
+	margin: 0 auto;
+}
+ #logo img {
+ 	height: 280px;
+    width: 300px;
+    margin-top: 90px;
+    opacity: 0.1;
+    position: relative;
+ }
+
+ header {
+ 	width: 1024px;
+ 	min-height: 70px;
+ }
+
+
+#content {
+	height: 375px;
+	width: 1024px;
+}
+ .leftContent {
+ 	width: 240px;
+ 	margin: 5px 0 0 20px;
+ 	border: 4px solid #ff8c54;
+ 	border-radius: 20px;
+ 	float: left;
+ }
+
+ #welcome {
+ 	text-align: center;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    width: 240px;
+    min-height: 30px;
+    background: #ff7103; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover,  #ff7103 0%, #ffbd21 1%, #ff6600 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover,  #ff7103 0%,#ffbd21 1%,#ff6600 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center,  #ff7103 0%,#ffbd21 1%,#ff6600 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7103', endColorstr='#ff6600',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+ }
+
+ #welcome p {
+ 	padding-top: 4px;
+ 	font-family: "Verdana";
+ 	font-size: 22px;
+ 	color: #0928c1;
+ 	font-weight: bold;
+ 	text-shadow: 3px 5px 9px #000000;
+ }
+
+#enteredName {
+	text-transform: uppercase;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: "Verdana";
+    font-weight: bold;
+    width: 226px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+#leftContentLogo {
+	width: 220px;
+	margin: 0 auto;
+}
+#leftContentLogo img {
+	width: 216px;
+	height: 198px;
+	padding-bottom: 26px;
+}
+ .middleContent {
+ 	width: 490px;
+    min-height: 380px;
+    background: url("../images/logo_behind.png") no-repeat top 26px center;
+    background-size: 370px;
+    float: left;
+ }
+
+ #middleSubContent {
+    text-align: center;
+    margin: 40px auto;
+    border-radius: 20px;
+    height: 150px;
+    width: 400px;
+ }
+
+#symbol {
+    width: 70px;
+    margin: 0 auto;
+}
+ #symbol img:first-child {
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    display: none;
+ }
+
+ #symbol img:last-child {
+    width: 233px;
+    height: 60px;
+    cursor: pointer;
+    position: relative;
+    left: -80px;
+    display: none;
+ }
+
+ .rightContent {
+ 	width: 240px;
+ 	margin: 5px 0 0 0;
+ 	border: 4px solid #ff8c54;
+ 	border-radius: 20px;
+ 	float: left;
+    background: url("../images/moneySelection.png");
+    background-repeat: no-repeat;
+    background-position-y: 317px;
+ }
+
+#pointsTree {
+ 	text-align: center;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    width: 240px;
+    min-height: 30px;
+    background: #ff7103; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover,  #ff7103 0%, #ffbd21 1%, #ff6600 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover,  #ff7103 0%,#ffbd21 1%,#ff6600 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center,  #ff7103 0%,#ffbd21 1%,#ff6600 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7103', endColorstr='#ff6600',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+ }
+
+ #pointsTree p {
+ 	padding-top: 4px;
+ 	font-family: "Verdana";
+ 	font-size: 22px;
+ 	color: #0928c1;
+ 	font-weight: bold;
+ 	text-shadow: 3px 5px 9px #000000;
+ }
+
+ #moneyList {
+ 	text-align: right;
+ 	width: 120px;
+ 	margin-left: 50px;
+ 	padding-top: 2px; 
+ }
+
+ #moneyList p {
+ 	font-family: "Verdana";
+ 	font-size: 16px;
+ 	margin: 15px 0;
+ 	color: #8cf1f2;
+ 	word-spacing: 5px;
+ }
+
+ #top {
+ 	height: 60px;
+ 	width: 1024px;
+ 	border-bottom: 2px solid #ffffff;
+ }
+
+ #topEarnedMoney {
+ 	background: url("../images/topEarnedMoney.png") no-repeat;
+    position: absolute;
+    background-size: 280px;
+    top: 42px;
+    left: 535px;
+    height: 41px;
+    width: 280px;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 20px;
+    color: #ff6c0a;
+    font-family: "Verdana";
+    font-weight: bold;
+ }
+#fiftyFifty {
+	width: 88px;
+    height: 25px;
+    border: 4px solid #8a3fdc;
+    border-radius: 100px / 50px;
+    float: right;
+    text-align: center;
+    margin: 12px 20px 0 0;
+    padding-top: 10px;
+    cursor: pointer;
+}
+#fiftyFifty span {
+	font-family: "Verdana";
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+	padding-top: 50px;
+}
+#peoplePoll {
+    width: 100px;
+    background: url("../images/peoplePoll.png") no-repeat;
+    z-index: 0;
+    height: 45px;
+    float: right;
+    margin-top: 10px;
+}
+ #bottom {
+ 	width: 1024px;
+ 	border-top: 2px solid #ffffff;
+}
+
+footer {
+ 	width: 1024px;
+ 	min-height: 100px;
+
+ }
+
+ .question {
+    margin: 0 auto;
+    width: 600px;
+    height: 52px;
+    font-size: 20px;
+    color: orange;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 16px;
+}
+
+.questionBack {
+    background: url("../images/questionPanel.png") no-repeat;
+    background-size: 600px;
+}
+
+#answers {
+	margin:0 auto;
+	width: 580px;
+	height: 50px;
+}
+
+input[type=radio] {
+            display: none;
+        }
+        #optionAB {
+            float: left;
+        }
+
+        #optionCD {
+            float: left;
+        }
+
+        label {
+            display: block;
+            padding-top: 12px;
+            padding-left: 20px;
+            height: 30px;
+            width: 270px;
+            background: url("../images/optionsNormal.png") no-repeat;
+            margin-bottom: 5px;
+            color: white;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        input[type="radio"]:checked + label {
+            background: url("../images/answerClicked.png") no-repeat;
+        }
+
+.options {
+    clear: both;
+    float: none;
+}
+.optionColor {
+    color: orange;
+    padding-right: 30px;
+    font-weight: bold;
+}
+#lockUnlock {
+    width: 200px;
+    margin: 0 auto;
+}
+#unlock {
+    width: 90px;
+    height: 50px;
+    border-radius: 100px / 50px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #867c53;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    margin-left: 8px;
+    margin-top: 2px;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a39a68+18,493400+81 */
+background: #a39a68; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #a39a68 18%, #493400 81%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  #a39a68 18%,#493400 81%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  #a39a68 18%,#493400 81%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a39a68', endColorstr='#493400',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0f94cc+18,001989+60 */
+background: #a39a68; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #a39a68 18%, #493400 60%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  #a39a68 18%,#493400 60%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,   #a39a68 18%,#493400 60%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a39a68', endColorstr='#493400',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#lock {
+    width: 90px;
+    height: 50px;
+    border-radius: 100px / 50px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #3d64a6;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    margin-left: 8px;
+    margin-top: 2px;
+ /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0f94cc+18,001989+60 */
+background: #0f94cc; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #0f94cc 18%, #001989 60%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  #0f94cc 18%,#001989 60%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  #0f94cc 18%,#001989 60%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f94cc', endColorstr='#001989',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+}
+
+#crossFiftyFifty {
+    display: none;
+    position: relative;
+    left: 20px;
+    top: -30px;
+}
+
+#crossPeoplePoll {
+    cursor: pointer;
+    display: none;
+    float: right;
+    position: relative;
+    right: 46px;
+    z-index: 1;
+}
+
+#chart {
+    display: none; 
+    height: 270px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+#bar1, #bar2, #bar3, #bar4 {
+    float: left;
+    width: 120px;
+    height: 120px;
+    background: url("../images/peoplePoll.png") no-repeat top 25px center;
+    margin-left: 20px;
+    margin-top: 25px;
+    border-radius: 60px;
+    background-color: #753af8;
+    border: 2px solid #000000;
+
+}
+
+#bar1 p, #bar2 p, #bar3 p, #bar4 p {
+    color: white;
+    text-align: center;
+    margin-top: 80px;
+}

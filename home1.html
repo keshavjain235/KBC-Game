@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KBC : The Game</title>
+	<link rel="shortcut icon" href="images/titleLogo.png">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script src="home1ajs.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="home1css.css">
+</head>
+
+<body>
+	<div ng-app="app" ng-controller="homeController">
+	<br><br><br><br><img src="images/logo.png" class="image">
+	<a href="aboutus.html"><button class="btn btn-danger" id="aboutus">About Us</button></a>
+	<a href="rules.html"><button class="btn btn-warning" id="rulebtn">Game Rules</button></a>
+	<br><br>
+	<form name="myForm">
+		<center>
+			<div class="container tbox">
+				<input type="text" name="enteredUserName" id="MyTextBox" placeholder="Type your name here" ng-model="enteredUserName" required>
+			</div>
+			<br>
+			<button id="start" class="btn btn-primary btn-lg" ng-click="navigate()" style="margin-left: 25px;">Start</button>
+		</center>
+	</form>
+	</div>
+	
+</body>
+</html>

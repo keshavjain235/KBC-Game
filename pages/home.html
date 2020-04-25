@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>KAUN BANEGA COREPAT-I</title>
+	<script src="libraries/angular.min.js" type="text/javascript"></script>
+<script src="libraries/angularRoute.min.js" type="text/javascript"></script>
+<!-- <script src="libraries/jquery.min.js" type="text/javascript"></script> -->
+<script src="app/script.js" type="text/javascript"></script>
+<script src="app/controller/homeController.js" type="text/javascript"></script>
+<script src="app/controller/mainController.js" type="text/javascript"></script>
+<script src="app/controller/restartController.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="images/titleLogo.png">
+
+</head>
+<body>
+	<section id="wrapper">
+		<section id="logo">
+			<img src="images/logo.png" alt="Kaun Banega Corepat-I" title="Kaun Banega Corepat-I logo">
+		</section>
+		<form name="myForm">
+		<section id="userInput">
+			<input id="username" type="text" placeholder="Type your name here" ng-model="enteredUserName" required autocomplete="off">
+			<span id="errorMessage">{{alertError}}</span>
+			<input type="button" id="start" ng-click="navigate()" value="Start">
+		</section>
+	</section>
+</body>
+</html>

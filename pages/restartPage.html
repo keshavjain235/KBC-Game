@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>KAUN BANEGA COREPAT-I</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/restartPage.css">
+</head>
+<body>
+	<section id="wrapper">
+	<p id="congrats">Congratulations {{showUser()}}!!!</p>
+		<section id="logo">
+			<img src="images/logo.png" alt="Kaun Banega Corepat-I" title="Kaun Banega Corepat-I logo">
+		</section>
+		<section id="userInput">
+			<section id="points">
+			<p ng-model="earnedMoney">Points Earned : {{value}}</p>
+			</section>
+			<button id="start" ng-click="reStart()">Restart</button>
+		</section>
+	</section>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KBC : The Game</title>
+	<link rel="shortcut icon" href="images/titleLogo.png">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/restartPage.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
+	<script src="main1ajs.js" type="text/javascript"></script>
+	<script src="home1ajs.js" type="text/javascript"></script>
+	<script src="restartController.js" type="text/javascript"></script>
+</head>
+
+<body ng-app="myapp2" ng-controller="restartController">
+	<div id="wrapper">
+	<p id="congrats">Congratulations {{urlParam('name')}}!!!</p>
+		<div id="logo">
+			<img src="images/logo.png">
+		</div>
+		<div id="userInput">
+			<div id="points">
+			<center><p id="monear" ng-model="earnedMoney">Money Earned: {{urlParam('money')}}</p></center>
+			</div>
+			<button id="start" ng-click="reStart()">Restart</button>
+		</div>
+	</div>
+</body>
+</html>
